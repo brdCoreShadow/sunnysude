@@ -3,6 +3,11 @@ import styled from "@emotion/styled";
 export const FeedbackCon = styled.div`
   margin-bottom: 86px;
 
+  padding-left: 24px;
+  padding-right: 24px;
+
+  text-align: center;
+
   & > h3 {
     margin-bottom: 64px;
 
@@ -16,7 +21,7 @@ export const FeedbackCon = styled.div`
 `;
 
 export const FeedbackItem = styled.li`
-text-align: center;
+  text-align: center;
 
   &:not(:last-of-type) {
     margin-bottom: 64px;
@@ -24,12 +29,43 @@ text-align: center;
 `;
 
 export const AvaThumb = styled.div`
-display: inline-block;
+  display: inline-block;
 
-width: 72px;
-height: 72px;
+  width: 72px;
+  height: 72px;
 
-border-radius: 50%;
+  margin-bottom: 32px;
 
-overflow: hidden;
-`
+  border-radius: 50%;
+
+  overflow: hidden;
+`;
+
+export const Content = styled.p`
+  margin-bottom: 32px;
+
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: -0.13px;
+  font-weight: 600;
+
+  color: #5b636d;
+`;
+
+export const Name = styled.h4`
+  margin-bottom: 8px;
+
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: -0.13px;
+`;
+
+export const Position = styled.p`
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: -0.1px;
+  font-weight: 600;
+
+  color: #a7aaad;
+  opacity: 0.7;
+`;
