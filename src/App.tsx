@@ -1,4 +1,5 @@
 import AboutList from "./components/AboutList/AboutList";
+import Feedback from "./components/Feedback/Feedback";
 import HeaderDashBoard from "./components/HeaderDashBoard/HeaderDashBoard";
 import Intro from "./components/Intro/Intro";
 import ServiceList from "./components/ServiceList/ServiceList";
@@ -15,6 +16,7 @@ const App: React.FC = () => {
       <SharedLayout>
         <AboutList />
         <ServiceList/>
+        <Feedback/>
       </SharedLayout>
     </div>
   );
