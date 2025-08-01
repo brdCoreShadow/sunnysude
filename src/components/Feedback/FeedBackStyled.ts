@@ -8,6 +8,12 @@ export const FeedbackCon = styled.div`
 
   text-align: center;
 
+  @media (min-width: 1280px) {
+    margin-bottom: 160px;
+    padding-left: 165px;
+    padding-right: 165px;
+  }
+
   & > h3 {
     margin-bottom: 64px;
 
@@ -17,6 +23,22 @@ export const FeedbackCon = styled.div`
     letter-spacing: 4px;
 
     color: #a7aaad;
+
+    @media (min-width: 1280px){
+        margin-bottom: 80px;
+
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+  }
+`;
+
+export const FeedbackList = styled.ul`
+  @media (min-width: 1280px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 `;
 
@@ -25,6 +47,11 @@ export const FeedbackItem = styled.li`
 
   &:not(:last-of-type) {
     margin-bottom: 64px;
+
+    @media (min-width: 1280px) {
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
   }
 `;
 
@@ -39,6 +66,10 @@ export const AvaThumb = styled.div`
   border-radius: 50%;
 
   overflow: hidden;
+
+  @media (min-width: 1280px){
+    margin-bottom: 58px;
+  }
 `;
 
 export const Content = styled.p`
@@ -50,6 +81,10 @@ export const Content = styled.p`
   font-weight: 600;
 
   color: #5b636d;
+
+  @media (min-width: 1280px){
+    margin-bottom: 68px;
+  }
 `;
 
 export const Name = styled.h4`

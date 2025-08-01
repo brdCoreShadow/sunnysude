@@ -8,10 +8,27 @@ export const NavListStyled = styled.ul<ILayout>`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: 1280px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+  margin-bottom: ${({ layout }) => (layout === "footer" ? "88px" : "0")};
+
+    margin-right: ${({ layout }) => (layout === "header" && "48px")};
+  }
 `;
 
 export const NavListItem = styled.li<ILayout>`
-margin-bottom: ${({layout}) => layout==="burger" ? "32px" : "0"};
+  margin-bottom: ${({ layout }) => (layout === "burger" ? "32px" : "0")};
+
+  @media (min-width: 1280px) {
+    &:not(:last-of-type) {
+      margin-right: ${({ layout }) => (layout === "header" ? "48px" : "56px")};
+    }
+  }
 
   & > a {
     font-size: ${({ layout }) => (layout === "footer" ? "18px" : "20px")};
@@ -21,5 +38,24 @@ margin-bottom: ${({layout}) => layout==="burger" ? "32px" : "0"};
     font-weight: 600;
 
     color: ${({ layout }) => (layout === "footer" ? "#458D7E" : "#808397")};
+
+    @media (min-width: 1280px) {
+      font-size: 18px;
+      line-height: 1.4;
+      letter-spacing: -0.13px;
+
+      color: ${({ layout }) => (layout === "header" ? "#fff" : "#458D7E")};
+
+      transition: color 0.3s;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: ${({ layout }) => layout === "footer" && "#fff"};
+
+        transition: color 0.3s;
+        cursor: pointer;
+      }
+    }
   }
 `;

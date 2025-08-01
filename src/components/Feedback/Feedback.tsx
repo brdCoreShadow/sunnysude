@@ -8,7 +8,7 @@ const Feedback: React.FC = () => {
   return (
     <SC.FeedbackCon>
       <h3>client testimonial</h3>
-      <ul>
+      <SC.FeedbackList>
         <SC.FeedbackItem>
           <SC.AvaThumb>
             <img src={avaFirst} alt="emily" />
@@ -48,7 +48,7 @@ const Feedback: React.FC = () => {
             <SC.Position>Business Owner</SC.Position>
           </div>
         </SC.FeedbackItem>
-      </ul>
+      </SC.FeedbackList>
     </SC.FeedbackCon>
   );
 };
