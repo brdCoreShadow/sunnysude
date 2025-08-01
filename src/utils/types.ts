@@ -5,3 +5,9 @@ export interface IChildProps {
 export interface ILayout {
     layout:string;
 }
+
+export interface IShare {
+    openShare:()=>void;
+    isShare:boolean;
+    closeShare:()=>void;
+}
