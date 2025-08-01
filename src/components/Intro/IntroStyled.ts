@@ -13,6 +13,11 @@ export const IntroCon = styled.div`
     font-weight: 900;
 
     color: #fff;
+
+    @media (min-width: 1280px){
+        font-size: 56px;
+        letter-spacing: 8.75px;
+    }
   }
 
   &::after {
@@ -32,5 +37,9 @@ export const IntroCon = styled.div`
     background-image: url("data:image/svg+xml;utf8,<svg width='36' height='114' xmlns='http://www.w3.org/2000/svg'><g stroke='%23FFF' stroke-width='6' fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'><path d='M18 3v100M3 95.484l15 15 15-15'/></g></svg>");
 
     background-repeat: no-repeat;
+
+    @media (min-width: 1280px){
+        transform: translate(-50%, 175%);
+    }
   }
 `;

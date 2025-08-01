@@ -8,3 +8,10 @@ flex-direction: row;
 align-items: center;
 justify-content: space-between;
 `
+
+export const DeskFlexCon = styled.div`
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+`
