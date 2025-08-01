@@ -1,11 +1,11 @@
 import * as SC from "./LogoStyled"
 
-import logoIcon from "../../assets/images/logo.svg"
+import { ILayout } from "@/utils/types";
 
-const Logo:React.FC = () => {
+const Logo:React.FC<ILayout> = ({layout}) => {
     return ( 
-        <SC.LogoCon>
-            <img src={logoIcon} alt="logo" />
+        <SC.LogoCon layout={layout}>
+          <h1>sunnyside</h1>
         </SC.LogoCon>
      );
 }

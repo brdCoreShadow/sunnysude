@@ -6,7 +6,7 @@ import Logo from "../Logo/Logo";
 const HeaderDashBoard: React.FC = () => {
   return (
     <SC.HeaderDashBoardCon>
-      <Logo />
+      <Logo layout="header"/>
       <BurgerBtn/>
     </SC.HeaderDashBoardCon>
   );
